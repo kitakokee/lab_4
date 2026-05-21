@@ -5,7 +5,7 @@ project(Forest)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(SFML COMPONENTS Window Graphics System REQUIRED)
+find_package(SFML COMPONENTS window graphics REQUIRED)
 
 add_executable(Forest
     main.cpp
@@ -26,4 +26,4 @@ add_executable(Forest
     Sundew.cpp
 )
 
-target_link_libraries(Forest PRIVATE SFML::Graphics SFML::Window SFML::System)
+target_link_libraries(Forest PRIVATE sfml-window sfml-graphics)
