@@ -2,13 +2,12 @@ cmake_minimum_required(VERSION 3.10)
 
 project(Forest)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(SFML COMPONENTS Window Graphics System REQUIRED)
+find_package(SFML COMPONENTS window graphics REQUIRED)
 
 add_executable(Forest
-    main.cpp
     Animal.cpp
     Carnivore.cpp
     Cat.cpp
@@ -19,6 +18,7 @@ add_executable(Forest
     Forest.cpp
     Herbivore.cpp
     Lion.cpp
+    main.cpp
     Mushroom.cpp
     Penguin.cpp
     Plant.cpp
