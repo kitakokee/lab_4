@@ -26,4 +26,4 @@ add_executable(Forest
     Sundew.cpp
 )
 
-target_link_libraries(Forest PRIVATE SFML::Graphics SFML::Window SFML::System)
+target_link_libraries(Forest PRIVATE sfml-window sfml-graphics)
